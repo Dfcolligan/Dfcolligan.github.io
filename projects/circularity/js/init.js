@@ -32,25 +32,16 @@ var init = function (window) {
         }
 
     // TODO 3 / 7 : Call the drawCircle function 
-        functionName(argument1, argument2, ...);
-        var counter = 0; 
-        while (counter < 10) {
-    // do something
-        counter++
+        drawCircle(){
+        for (var counter = 0; counter < 10; counter++) {
+        // do something
+            }
         }
 
-for (var counter = 0; counter < 10; counter++) {
-    // do something
-}
-    
         view.addChild(fps);
         app.addUpdateable(fps);
         
-        function update() {
-    // TODO 4 : Update the circle's position //
-        physikz.updatePosition(circles[0]);
-        // code to call the function on the other 4 circles...
-}
+        
     
         game.checkCirclePosition = function(circle) {
             // TODO 5 : YOUR CODE STARTS HERE //////////////////////
@@ -77,7 +68,14 @@ for (var counter = 0; counter < 10; counter++) {
     
         function update() {
             // TODO 4 : Update the circle's position //
-
+        physikz.updatePosition(circles[0]);
+        physikz.updatePosition(circles[1]);
+        physikz.updatePosition(circles[2]);
+        physikz.updatePosition(circles[3]);
+        physikz.updatePosition(circles[4]);  
+        // code to call the function on the other 4 circles...
+}
+        
             
             // TODO 5 : Call game.checkCirclePosition on your circles.
            
