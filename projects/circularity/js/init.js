@@ -23,7 +23,7 @@ var init = function (window) {
         var circle; 
         var circles = [];
         
-    var drawCircle = function() {
+    function drawCircle() {
         // TODO 2 : Create a function that draws a circle 
         circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
         physikz.addRandomVelocity(circle, canvas);
@@ -32,14 +32,12 @@ var init = function (window) {
         }
 
     // TODO 3 / 7 : Call the drawCircle function 
-        drawCircle(){
-        for (var counter = 0; counter < 10; counter++) {
-        // do something
-            }
-        }
-
-        view.addChild(fps);
-        app.addUpdateable(fps);
+        drawCircle();
+        drawCircle();
+        drawCircle();
+        
+//        view.addChild(fps);
+//        app.addUpdateable(fps);
         
         
     
