@@ -35,11 +35,12 @@ var init = function (window) {
         drawCircle();
         drawCircle();
         drawCircle();
+        drawCircle();
+        drawCircle();
+
         
-//        view.addChild(fps);
-//        app.addUpdateable(fps);
-        
-        
+        view.addChild(fps);
+        app.addUpdateable(fps);
     
         game.checkCirclePosition = function(circle) {
             // TODO 5 : YOUR CODE STARTS HERE //////////////////////
@@ -66,20 +67,19 @@ var init = function (window) {
     
         function update() {
             // TODO 4 : Update the circle's position //
-        physikz.updatePosition(circles[0]);
-        physikz.updatePosition(circles[1]);
-        physikz.updatePosition(circles[2]);
-        physikz.updatePosition(circles[3]);
-        physikz.updatePosition(circles[4]);  
-        // code to call the function on the other 4 circles...
-}
+            physikz.updatePosition(circles[0]);
+            physikz.updatePosition(circles[1]);
+            physikz.updatePosition(circles[2]);
+            physikz.updatePosition(circles[3]);
+            physikz.updatePosition(circles[4]);  
+            // code to call the function on the other 4 circles...
+
         
             
             // TODO 5 : Call game.checkCirclePosition on your circles.
            
 
             // TODO 8 : Iterate over the array
-           
 
         }
         
@@ -93,7 +93,7 @@ var init = function (window) {
         game.update = update;
         
         app.addUpdateable(window.opspark.game);
-    }
+    };
 };
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
