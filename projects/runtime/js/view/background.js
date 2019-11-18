@@ -98,7 +98,7 @@ var background = function (window) {
                 var building = buildings[i];
                 building.x -= 0.3;
                 if(building.x < -200) {
-                    building.x += canvasWidth +75;
+                    building.x += canvasWidth + 75;
                 }
             }
 
