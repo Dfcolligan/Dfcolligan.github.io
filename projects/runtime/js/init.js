@@ -1,4 +1,4 @@
-cdvar init = function (window) {
+var init = function (window) {
     'use strict';
 
     var 
