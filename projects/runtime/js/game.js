@@ -203,6 +203,7 @@
             };
             return gameItem;
         }
+        
 
         /* must be set before call to playLevel with function that 
            create a game item when passed an object from gameItems
